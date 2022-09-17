@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body
+{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    /* 100% da largura disponivel na tela
+    auto é da altura automática*/
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+
+header{
+     padding-top: 32px;
+     text-align: center;
+     height: calc(120px + 32px );
+}
+
+
+header div {
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    /* o display:flex faz com que um elemento fique abaixo do outro  */
+    display: flex;
+    background-image: linear-gradient(90deg, #6c4fc5 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover{
+       transform:scale(1.1);
+}
+
+
+header img{
+      width: 100%;
+      border-radius: 50%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    /* quando a 2 valores na margin o primeiro valor
+    é indentificado como cimaa e em baixo*/
+    margin: 32px auto;
+    display: grid;
+    margin-top: 32px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #6c4fc5 0%, #43E7AD 50.52%, #E2D45C 100%);
+    margin: 20px;
+    padding-top: 2px;
+    border-radius: 6px;
+
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 3px;
+    margin: 3px 0;
+    border-radius: 6px;
+    
+}
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+   letter-spacing: -0.18px;
+   color: #A1A1AA;
+}
+section ul {
+   
+    /* display tem a ver com visualização do elemento */
+    /* display block bloqueia o elemento abaixo */
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 3px;
+    flex-wrap: wrap;
+}
+
+section ul li {
+      transition: transform .3s;
+      
+}
+
+section ul li:hover{
+     transform: scale(1.5);
+     
+}
+
+.games-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img{
+    border-radius: 50%;
+    border: 1px solid #444E54;
+}
+
+/* animation */
+
+/* de cima bixo */
+
+header div {
+    animation: diciMa .7s .2s backwards;
+    
+}
+main section {
+    animation: diBaixo .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes diciMa {
+    from{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes diBaixo {
+    from{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
