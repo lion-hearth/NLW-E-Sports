@@ -163,4 +163,20 @@ main section:nth-child(3){
         transform: translateY(0)
     }
 }
-/* 1 */
+
+.girar {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.girar{
+    text-align: left;
+}
