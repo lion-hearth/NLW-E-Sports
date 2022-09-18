@@ -14,4 +14,4 @@
  - Git e Github
 
  ##  📞 Contanto 
- richar.oliveira1337@gmail.com
+ richard.oliveira1337@gmail.com
