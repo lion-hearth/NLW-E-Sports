@@ -13,5 +13,5 @@
  - CSS
  - Git e Github
 
- ##  📞 Contanto 
+ ##  📞 Contato
  richard.oliveira1337@gmail.com
